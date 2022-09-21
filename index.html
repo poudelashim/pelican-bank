@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelican Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+        <nav>
+        <div class="nav-logo">
+            <h2>Pelican Bank</h2>
+        </div>
+        <i class="bank-logo fa-solid fa-building-columns"></i>
+        <div class="nav-menu">
+            <ul>
+                <li class="nav-items">
+                    <form >
+                        <input type="text" name="text" placeholder="username"/>
+                        <input type="password" name="password" placeholder="pin/password" />
+                        <button>
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </button> 
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <!-- Main -->
+  <main class="app">
+
+        <!-- Balance -->
+    <div class="balance">
+        <div>
+            <p class="balance-label">Current Balance</p>
+            <p class="balance-date">05/03/2020</p>
+
+        </div>
+        <p class="balance-value">$5,000</p>
+    </div>
+     <!-- Movements -->
+<div class="movements">
+    <div class="movements-row">
+        <div class="movements__type movements__type-deposit">2 deposit</div>
+        <div class="movements__date">3 days ago</div>
+        <div class="movements__value">$4000</div>
+    </div>
+    <div class="movements-row">
+        <div class="movements__type movements__type-withdrwal">2 withdrawal</div>
+        <div class="movements__date">21/09/2022</div>
+        <div class="movements__value">-$500</div>
+    </div>
+    
+  </div>
+ 
+      <!-- Summary -->
+      <div class="summary">
+     <p class="summary-label summary__in">In</p>
+     <p class="summary-value summary__in-value">$0000</p>
+     <p class="summary-label summary__out">Out</p>
+     <p class="summary-value summary__out-value">$0000</p>
+     <p class="summary-label summary__interest">Interest</p>
+     <p class="summary-value summary__interest-value">$0000</p>
+     <button class="btn-sort"><i class="fa-sharp fa-solid fa-sort">SORT</i></button>
+      </div>
+     <!--Operations  -->
+     <div class="operations">
+        <div class="operations__transfer-money">
+            <h2 class="transfer__money-header">Transfer Money</h2>
+            <form class="transfer__money">
+                <input class="transfer-text" type="text" name="text" />
+                <label for="transfer__money-transfer-to">Transfer to</label>
+                <input  class="transfer-amount-text"type="text" name="text" />
+                <label for="transfer__money-amount">Amount</label>
+
+                <button class="transfer-button" type="submit"><i class="  fa-solid fa-arrow-right"></i>Transfer</button>
+            </form>
+        </div>
+        <div class="operations__request-loan">
+            <h2 class="request__loan-header">Request Loan</h2>
+            <form class="request__money">
+                <input  class="request-amount-text"type="text" name="text" />
+                <label for="request__money-amount">Amount</label>
+                <button class="transfer-button" type="submit"><i class="  fa-solid fa-arrow-right"></i>Transfer</button>
+            </form>
+        </div>
+
+        <div class="operations__close-account"><h2 class="transfer__money-header">Close Account</h2>
+            <form class="transfer__money">
+                <input class="transfer-text" type="text" name="text" />
+                <label for="transfer__money-transfer-to">Confirm User</label>
+                <input  class="transfer-amount-text"type="password" name="text" />
+                <label for="transfer__money-amount">Pin</label>
+
+                <button class="close-button" type="submit"><i class="  fa-solid fa-arrow-right"></i>Close</button>
+            </form></div>
+
+     </div>
+     <p class="logout-timer">
+        You will be logged out in <span class="timer">05:00</span>
+      </p>
+  </main>
+    <!-- footer -->
+
+    
+</body>
+<script src="script.js"></script>
+</html>

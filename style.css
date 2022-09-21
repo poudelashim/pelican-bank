@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(234, 230, 230);
+  font-family: "Roboto", sans-serif;
+}
+
+/* navigation part */
+
+.nav-logo > h2 {
+  color: #0e86d4;
+}
+.bank-logo {
+  color: #0e86d4;
+}
+form,
+input,
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+  display: flex;
+  gap: 1rem;
+  color: antiquewhite;
+}
+
+button {
+  color: whitesmoke;
+  background-color: #0e86d4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  margin: 10px;
+}
+.bank-logo {
+  font-size: 1.6rem;
+}
+
+/* main */
+
+.app {
+  max-width: 100rem;
+  margin: 4rem auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto repeat(5, 15rem) auto;
+  gap: 2rem;
+  opacity: 1;
+  transition: all 1s;
+}
+.balance {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  margin: 3rem;
+}
+.balance-label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.balance-date {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.balance-value {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* summary */
+.summary {
+  grid-row: 5/6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-sort {
+  border: none;
+  color: white;
+  background-color: #0e86d4;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.summary__in-value,
+.summary__interest-value {
+  color: rgb(29, 204, 29);
+}
+
+.summary__out-value {
+  color: red;
+}
+.movements {
+  grid-row: 2 / span 2;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+/* movements */
+.movements-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 10rem;
+  padding: 1.6rem;
+}
+.movements__type-withdrwal {
+  background-image: linear-gradient(to left, #e52a5a, #ff585f);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.movements__type-deposit {
+  background-image: linear-gradient(to left, #39b385, #9be15d);
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.movements__date {
+  font-size: 1.3rem;
+  color: rgb(132, 122, 122);
+}
+.movements__value {
+  font-size: 1.4rem;
+}
+/* operations */
+
+.transfer__money-header,
+.request__loan-header {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.operations__transfer-money,
+.operations__request-loan,
+.operations__close-account {
+  background-image: linear-gradient(
+    to left,
+    rgb(14, 134, 212),
+    rgb(172, 127, 127)
+  );
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  /* width: 40vh; */
+}
+.transfer__money,
+.request__money {
+  display: grid;
+  grid-row: 2/5;
+}
+
+.transfer-button {
+  font-size: 1.2rem;
+  background-color: rgb(59, 190, 18, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.transfer-text,
+.transfer-amount-text,
+.request-amount-text {
+  background-color: wheat;
+  color: black;
+}
+.close-button {
+  background-color: #e52a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.2rem;
+}
+.logout-timer {
+  padding: 0 1rem;
+  margin-top: 45rem;
+  font-size: 1rem;
+  text-align: right;
+}
+.timer {
+  font-weight: bolder;
+}
